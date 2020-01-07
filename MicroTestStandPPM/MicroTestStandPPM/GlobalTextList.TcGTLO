@@ -6,8 +6,48 @@
         <o xml:space="preserve" t="GlobalTextListObject">
           <l n="TextList" t="ArrayList" cet="TextListRow">
             <o>
+              <v n="TextID">"593"</v>
+              <v n="TextDefault">"%f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"964"</v>
+              <v n="TextDefault">"%X"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"957"</v>
+              <v n="TextDefault">"+"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"951"</v>
+              <v n="TextDefault">"-"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"960"</v>
+              <v n="TextDefault">"0 = Default Acceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"962"</v>
+              <v n="TextDefault">"0 = Default Deceleration"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"959"</v>
+              <v n="TextDefault">"Acceleration: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"504"</v>
               <v n="TextDefault">"Cam Power"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"955"</v>
+              <v n="TextDefault">"Clear"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -16,13 +56,58 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"949"</v>
+              <v n="TextDefault">"Control"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"684"</v>
               <v n="TextDefault">"Controls"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"594"</v>
+              <v n="TextDefault">"Current Position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"961"</v>
+              <v n="TextDefault">"Deceleration: %f"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"965"</v>
+              <v n="TextDefault">"Error Code"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"963"</v>
+              <v n="TextDefault">"Error:"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"953"</v>
+              <v n="TextDefault">"GO"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"954"</v>
+              <v n="TextDefault">"GO to set position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"595"</v>
+              <v n="TextDefault">"High Limit Hit Indicator"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"768"</v>
               <v n="TextDefault">"Illuminator: %f %"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"592"</v>
+              <v n="TextDefault">"Low Limit Hit Indicator"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -33,6 +118,11 @@
             <o>
               <v n="TextID">"460"</v>
               <v n="TextDefault">"Motor"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"596"</v>
+              <v n="TextDefault">"Moving:"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
@@ -76,8 +166,33 @@
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
+              <v n="TextID">"950"</v>
+              <v n="TextDefault">"Set Position"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
               <v n="TextID">"470"</v>
               <v n="TextDefault">"Settings"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"591"</v>
+              <v n="TextDefault">"Status"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"952"</v>
+              <v n="TextDefault">"Step Size"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"956"</v>
+              <v n="TextDefault">"STOP"</v>
+              <l n="LanguageTexts" t="ArrayList" />
+            </o>
+            <o>
+              <v n="TextID">"958"</v>
+              <v n="TextDefault">"Velocity: %f"</v>
               <l n="LanguageTexts" t="ArrayList" />
             </o>
             <o>
