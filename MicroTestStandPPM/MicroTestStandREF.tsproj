@@ -15,7 +15,7 @@
 			<NC File="NC.xti"/>
 		</Motion>
 		<Plc>
-			<Project File="MicroTestStandPPM.xti"/>
+			<Project File="MicroTestStandREF.xti"/>
 		</Plc>
 		<Io>
 			<Device File="Device 1 (EtherCAT).xti" Id="1"/>

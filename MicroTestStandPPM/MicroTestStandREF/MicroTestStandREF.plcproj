@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{410fd8ab-d4e6-4749-9da0-aea69c9142cd}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
-    <Name>MicroTestStandPPM</Name>
+    <Name>MicroTestStandREF</Name>
     <ProgramVersion>3.1.4020.5</ProgramVersion>
     <Application>{5c06fa8e-70b5-4d2e-ac72-42cf9b9ac345}</Application>
     <TypeSystem>{a8733575-4a3b-401f-a043-57cf0f47fb9a}</TypeSystem>
@@ -15,6 +15,9 @@
     <LibraryReferences>{c2e1514c-1daa-4904-879f-bf7ba1018fd1}</LibraryReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DUTs\DUT_MotionStage_Extras.TcDUT">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="GlobalTextList.TcGTLO">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +33,10 @@
     </Compile>
     <Compile Include="VISUs\VisualizationManager.TcVMO">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VISUs\VISU_MotionStage.TcVIS">
+      <SubType>Code</SubType>
+      <DependentUpon>VISUs\VisualizationManager.TcVMO</DependentUpon>
     </Compile>
     <Compile Include="VISU_TASK.TcTTO">
       <SubType>Code</SubType>
@@ -113,7 +120,7 @@
     </PlaceholderReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="MicroTestStandPPM.tmc">
+    <None Include="MicroTestStandREF.tmc">
       <SubType>Content</SubType>
     </None>
   </ItemGroup>

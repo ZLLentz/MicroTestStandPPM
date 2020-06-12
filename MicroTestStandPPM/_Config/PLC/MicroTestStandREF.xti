@@ -879,9 +879,9 @@ External Setpoint Generation:
 			</Relations>
 		</DataType>
 	</DataTypes>
-	<Project GUID="{410FD8AB-D4E6-4749-9DA0-AEA69C9142CD}" Name="MicroTestStandPPM" PrjFilePath="..\..\MicroTestStandPPM\MicroTestStandPPM.plcproj" TmcFilePath="..\..\MicroTestStandPPM\MicroTestStandPPM.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e">
+	<Project GUID="{410FD8AB-D4E6-4749-9DA0-AEA69C9142CD}" Name="MicroTestStandREF" PrjFilePath="..\..\MicroTestStandREF\MicroTestStandREF.plcproj" TmcFilePath="..\..\MicroTestStandREF\MicroTestStandREF.tmc" ReloadTmc="true" AmsPort="851" FileArchiveSettings="#x000e">
 		<Instance Id="#x08502000" TcSmClass="TComPlcObjDef" KeepUnrestoredLinks="2" TmcPath="MicroTestStandPPM\MicroTestStandPPM.tmc">
-			<Name>MicroTestStandPPM Instance</Name>
+			<Name>MicroTestStandREF Instance</Name>
 			<CLSID ClassFactory="TcPlc30">{08500001-0000-0000-F000-000000000064}</CLSID>
 			<Vars VarGrpType="1">
 				<Name>PlcTask Inputs</Name>
@@ -963,7 +963,7 @@ External Setpoint Generation:
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>Main.fbPPM.fbYStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
+					<Name>Main.fbREF.fbYStage.fbDriveVirtual.MasterAxis.NcToPlc</Name>
 					<Type GUID="{6A65C767-34E5-42BF-AD87-E1A503EAC7BE}" Namespace="MC">NCTOPLC_AXIS_REF</Type>
 					<SubVar>
 						<Name>AxisState</Name>
@@ -1012,46 +1012,6 @@ External Setpoint Generation:
 					</SubVar>
 				</Var>
 				<Var>
-					<Name>Main.fbPPM.fbPowerMeter.iVoltageINT</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbPowerMeter.fbThermoCouple.bError</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbPowerMeter.fbThermoCouple.bUnderrange</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbPowerMeter.fbThermoCouple.bOverrange</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbPowerMeter.fbThermoCouple.iRaw</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbFlowMeter.fRaw</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbYagThermoCouple.bError</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbYagThermoCouple.bUnderrange</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbYagThermoCouple.bOverrange</Name>
-					<Type>BOOL</Type>
-				</Var>
-				<Var>
-					<Name>Main.fbPPM.fbYagThermoCouple.iRaw</Name>
-					<Type>INT</Type>
-				</Var>
-				<Var>
 					<Name>Main.iRawEncoder</Name>
 					<Type>ULINT</Type>
 				</Var>
@@ -1070,16 +1030,16 @@ External Setpoint Generation:
 					<Type>BOOL</Type>
 				</Var>
 				<Var>
-					<Name>Main.fbPPM.fbYStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
+					<Name>Main.fbREF.fbYStage.fbDriveVirtual.MasterAxis.PlcToNc</Name>
 					<Type GUID="{63A84524-72E3-41C8-BEAB-4CCE44690A13}" Namespace="MC">PLCTONC_AXIS_REF</Type>
 				</Var>
 				<Var>
-					<Name>Main.fbPPM.fbGige.iIlluminatorINT</Name>
+					<Name>Main.fbREF.fbLaser.iShutdownINT</Name>
 					<Type>INT</Type>
 				</Var>
 				<Var>
-					<Name>Main.fbPPM.fbGige.bGigePower</Name>
-					<Type>BOOL</Type>
+					<Name>Main.fbREF.fbLaser.iLaserINT</Name>
+					<Type>INT</Type>
 				</Var>
 			</Vars>
 			<TaskPouOids>
@@ -1089,26 +1049,13 @@ External Setpoint Generation:
 		</Instance>
 	</Project>
 	<Mappings>
-		<OwnerA Name="MicroTestStandPPM Instance">
+		<OwnerA Name="MicroTestStandREF Instance">
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^EK1100^EL2004">
 				<Link VarA="PlcTask Outputs^Main.M1.bBrakeRelease" VarB="Channel 1^Output"/>
-				<Link VarA="PlcTask Outputs^Main.fbPPM.fbGige.bGigePower" VarB="Channel 2^Output" AutoLink="true"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^EK1100^EL3062">
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbPowerMeter.iVoltageINT" VarB="AI Standard Channel 1^Value" AutoLink="true"/>
-			</OwnerB>
-			<OwnerB Name="TIID^Device 1 (EtherCAT)^EK1100^EL3314">
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbPowerMeter.fbThermoCouple.bError" VarB="TC Inputs Channel 1^Status^Error" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbPowerMeter.fbThermoCouple.bOverrange" VarB="TC Inputs Channel 1^Status^Overrange" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbPowerMeter.fbThermoCouple.bUnderrange" VarB="TC Inputs Channel 1^Status^Underrange" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbPowerMeter.fbThermoCouple.iRaw" VarB="TC Inputs Channel 1^Value" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbYagThermoCouple.bError" VarB="TC Inputs Channel 2^Status^Error" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbYagThermoCouple.bOverrange" VarB="TC Inputs Channel 2^Status^Overrange" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbYagThermoCouple.bUnderrange" VarB="TC Inputs Channel 2^Status^Underrange" AutoLink="true"/>
-				<Link VarA="PlcTask Inputs^Main.fbPPM.fbYagThermoCouple.iRaw" VarB="TC Inputs Channel 2^Value" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^EK1100^EL4004">
-				<Link VarA="PlcTask Outputs^Main.fbPPM.fbGige.iIlluminatorINT" VarB="AO Outputs Channel 1^Analog output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^Main.fbREF.fbLaser.iLaserINT" VarB="AO Outputs Channel 1^Analog output" AutoLink="true"/>
+				<Link VarA="PlcTask Outputs^Main.fbREF.fbLaser.iShutdownINT" VarB="AO Outputs Channel 2^Analog output" AutoLink="true"/>
 			</OwnerB>
 			<OwnerB Name="TIID^Device 1 (EtherCAT)^EK1100^EL5042">
 				<Link VarA="PlcTask Inputs^Main.iRawEncoder" VarB="FB Inputs Channel 1^Position"/>
